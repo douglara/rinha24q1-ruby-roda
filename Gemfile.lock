@@ -1,0 +1,33 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bigdecimal (3.1.6)
+    concurrent-ruby (1.2.3)
+    nio4r (2.7.0)
+    pg (1.5.4)
+    puma (6.4.2)
+      nio4r (~> 2.0)
+    rack (3.0.9)
+    roda (3.77.0)
+      rack
+    sequel (5.77.0)
+      bigdecimal
+    sequel_pg (1.17.1)
+      pg (>= 0.18.0, != 1.2.0)
+      sequel (>= 4.38.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  concurrent-ruby
+  puma
+  roda
+  sequel
+  sequel_pg
+
+RUBY VERSION
+   ruby 3.2.2p53
+
+BUNDLED WITH
+   2.4.22
