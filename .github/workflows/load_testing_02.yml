@@ -21,9 +21,9 @@ jobs:
         git clone --single-branch --quiet https://github.com/zanfranceschi/rinha-de-backend-2024-q1.git
         cd rinha-de-backend-2024-q1
         wget https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/3.10.3/gatling-charts-highcharts-bundle-3.10.3-bundle.zip
-        mkdir gatling/3.10.3 -p
+        mkdir gatling
         unzip gatling-charts-highcharts-bundle-3.10.3-bundle.zip
-        mv gatling-charts-highcharts-bundle-3.10.3/* gatling/3.10.3/
+        mv gatling-charts-highcharts-bundle-3.10.3/* gatling/
         ./executar-teste-local.sh
         echo GATLING_OUTPUT_FOLDER=$(ls $HOME/load-test/user-files/results | sort | head -n 1) >> $GITHUB_ENV
       env:
